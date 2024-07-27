@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import './HomePage.css';
 import logo from './logo.jpg'; // Correctly import the logo image
 
@@ -10,8 +9,6 @@ export default function Homepage() {
     setShowLogin(!showLogin);
   };
 
-
-  
   const upcomingEvents = [
     {
       title: "Event 1",
@@ -29,7 +26,6 @@ export default function Homepage() {
       title: "Event 3",
       date: "2024-10-30",
       description: "Description for Event 3",
-
       image: "https://via.placeholder.com/150"
     },
   ];
@@ -38,48 +34,6 @@ export default function Homepage() {
     <div>
       <nav className="navbar bg-body-tertiary sticky-top">
         <div className="container-fluid">
-
-          <a className="navbar-brand">Navbar</a>
-          <form className="d-flex" role="search">
-            <i className="fa-solid fa-user fa-3x" onClick={handleLoginToggle}></i>
-            {showLogin && (
-              <div className="dropdown-menu p-4" style={{ display: 'block', position: 'absolute', right: '2rem', top: '4rem' }}>
-                <form>
-                  <div className="mb-3">
-                    <label htmlFor="exampleDropdownFormEmail2" className="form-label">Email address</label>
-                    <input type="email" className="form-control" id="exampleDropdownFormEmail2" placeholder="" />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="exampleDropdownFormPassword2" className="form-label">Password</label>
-                    <input type="password" className="form-control" id="exampleDropdownFormPassword2" placeholder="" />
-                  </div>
-                  <button type="submit" className="btn btn-primary">Sign in</button>
-                </form>
-              </div>
-            )}
-          </form>
-        </div>
-      </nav>
-
-      <main className="container my-5">
-        <div className="row">
-          {campaigns.map((campaign, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <div className="card">
-                <img src={campaign.image} className="card-img-top" alt={campaign.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{campaign.title}</h5>
-                  <p className="card-text">{campaign.description}</p>
-                  <a href="#" className="btn btn-primary">Learn more</a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </main>
-
-      <footer className="bg-light text-center text-lg-start mt-auto">
-
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img src={logo} alt="Logo" className="logo" />
             <div className="d-flex flex-column">
@@ -123,7 +77,7 @@ export default function Homepage() {
             <div className="social-links">
               <a href="https://www.facebook.com/jtdfoundation/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
               <a href="https://x.com/i/flow/login?redirect_after_login=%2Fj0iningthed0ts" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/joiningthedotsfoundation/?hl=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/joiningthedotsfoundation/?hl=en+" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
             </div>
           </section>
         </div>
@@ -146,7 +100,6 @@ export default function Homepage() {
       </main>
 
       <footer className="text-center text-lg-start mt-auto">
-
         <div className="container p-4">
           <p>&copy; 2024 Your NGO. All rights reserved.</p>
         </div>
