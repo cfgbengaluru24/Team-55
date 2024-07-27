@@ -1,13 +1,14 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import '../App.css';
+// import '../App.css';
+import './Help.css';
 
 const Help = () => {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
 
-  // const onSubmit = async (data) => {
-    
-  // };
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
 
   return (
     <>
@@ -16,7 +17,7 @@ const Help = () => {
       <form action='' onSubmit={handleSubmit(onSubmit)}> 
         <div className="container">
           <input 
-            {...register("email", { required: 'true' })} 
+            {...register("email", { required: 'Email is required.' })} 
             placeholder="email" 
             type="email" 
           />
