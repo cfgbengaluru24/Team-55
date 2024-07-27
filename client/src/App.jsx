@@ -2,6 +2,12 @@ import React from 'react'
 import './App.css'
 import HomePage from './components/Homepage';
 import Help from './components/Help'
+
+function App() {
+
+  return (
+    <> 
+     
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
@@ -37,6 +43,7 @@ function App() {
   return (
     <>
     <RouterProvider router={router} />
+
     </>
   )
 }
