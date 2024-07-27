@@ -5,9 +5,9 @@ import '../App.css';
 const Help = () => {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
 
-  // const onSubmit = async (data) => {
+  const onSubmit = async (data) => {
     
-  // };
+  };
 
   return (
     <>
