@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import './HomePage.css';
+import logo from './logo.jpg'; // Correctly import the logo image
+//import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Homepage() {
   const [showLogin, setShowLogin] = useState(false);
@@ -25,52 +29,89 @@ export default function Homepage() {
     },
   ];
 
+  const upcomingEvents = [
+    {
+      name: "Event 1",
+      description: "This is a brief description of Event 1. It provides an overview of what to expect during the event.",
+      image: "https://via.placeholder.com/50"
+    },
+    {
+      name: "Event 2",
+      description: "This is a brief description of Event 2. It provides an overview of what to expect during the event.",
+      image: "https://via.placeholder.com/50"
+    },
+    {
+      name: "Event 3",
+      description: "This is a brief description of Event 3. It provides an overview of what to expect during the event.",
+      image: "https://via.placeholder.com/50"
+    },
+  ];
+
   return (
     <div>
       <nav className="navbar bg-body-tertiary sticky-top">
         <div className="container-fluid">
+
+          <a className="navbar-brand d-flex align-items-center" href="#">
+            <img src={logo} alt="Logo" className="logo" />
+            <div>
+              <span>Joining The Dots</span>
+              <div className="tagline">Empowering Girls for a Brighter Future</div>
+            </div>
+          </a>
+
           <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
+
           <form className="d-flex" role="search">
-            <i className="fa-solid fa-user fa-3x" onClick={handleLoginToggle}></i>
-            {showLogin && (
-              <div className="dropdown-menu p-4" style={{ display: 'block', position: 'absolute', right: '2rem', top: '4rem' }}>
-                <form>
-                  <div className="mb-3">
-                    <label htmlFor="exampleDropdownFormEmail2" className="form-label">Email address</label>
-                    <input type="email" className="form-control" id="exampleDropdownFormEmail2" placeholder="" />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="exampleDropdownFormPassword2" className="form-label">Password</label>
-                    <input type="password" className="form-control" id="exampleDropdownFormPassword2" placeholder="" />
-                  </div>
-                  <button type="submit" className="btn btn-primary">Sign in</button>
-                </form>
-              </div>
-            )}
+            <button className="btn btn-admin" type="button">Sign in as Admin</button>
+            <button className="btn btn-student" type="button">Sign in as Student</button>
           </form>
         </div>
       </nav>
 
       <main className="container my-5">
         <div className="row">
-          {campaigns.map((campaign, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <div className="card">
-                <img src={campaign.image} className="card-img-top" alt={campaign.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{campaign.title}</h5>
-                  <p className="card-text">{campaign.description}</p>
-                  <a href="#" className="btn btn-primary">Learn more</a>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="col-md-6 about-us mb-4">
+            <h3>About Us</h3>
+            <p>Our vision is to empower 10,000 girls to earn 50 LPA and contribute 2% of their earnings and 10 hours of their time by 2034. We operate primarily in the Chittoor District of Andhra Pradesh, working with over 100 government schools and 20 government degree colleges.</p>
+          </div>
+          <div className="col-md-6 upcoming-events mb-4">
+            <h3>Upcoming Events</h3>
+            <ul className="list-group">
+              {upcomingEvents.map((event, index) => (
+                <li key={index} className="list-group-item">
+                  <img src={event.image} className="event-image" alt={event.name} />
+                  <div className="event-details">
+                    <h5>{event.name}</h5>
+                    <p>{event.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="contact-us mb-4">
+          <h3>Contact Us</h3>
+          <p>For inquiries, please contact us at:</p>
+          <p>Email: contact@joiningdots.org</p>
+          <p>Phone: +91 12345 67890</p>
+          <div className="social-links">
+            <a href="https://www.facebook.com/jtdfoundation/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fj0iningthed0ts" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://www.instagram.com/joiningthedotsfoundation/?hl=en" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </div>
         </div>
       </main>
 
       <footer className="bg-light text-center text-lg-start mt-auto">
         <div className="container p-4">
-          <p>&copy; 2024 Your NGO. All rights reserved.</p>
+          <p>&copy; 2024 Joining The Dots. All rights reserved.</p>
         </div>
       </footer>
     </div>
