@@ -16,7 +16,7 @@ const router = createBrowserRouter(
       path: "/help",
       element: <Help/>,
     },
-    //Need to get hep rou
+    //Need to get hep route 
     // {
     //   path:"/get-help",
     //   element:<HomePage/>,
