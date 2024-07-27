@@ -51,6 +51,7 @@ export default function Homepage() {
     <div>
       <nav className="navbar bg-body-tertiary sticky-top">
         <div className="container-fluid">
+
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img src={logo} alt="Logo" className="logo" />
             <div>
@@ -58,6 +59,9 @@ export default function Homepage() {
               <div className="tagline">Empowering Girls for a Brighter Future</div>
             </div>
           </a>
+
+          <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
+
           <form className="d-flex" role="search">
             <button className="btn btn-admin" type="button">Sign in as Admin</button>
             <button className="btn btn-student" type="button">Sign in as Student</button>
