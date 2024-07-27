@@ -1,15 +1,15 @@
-
+import React from 'react'
 import './App.css'
-import AttendanceChecker from "./components/AttendanceChecker.jsx";
-
+// import HomePage from './components/Homepage';
+import Help from './components/Help'
+import AttendanceChecker from './components/AttendanceChecker'
 function App() {
-  
 
   return (
-    <>
-     <AttendanceChecker/>
+    <> 
+      <AttendanceChecker/>
     </>
   )
 }
 
-export default App
+export default App;
