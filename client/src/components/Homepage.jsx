@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './HomePage.css';
 import logo from './logo.jpg'; // Correctly import the logo image
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Homepage() {
