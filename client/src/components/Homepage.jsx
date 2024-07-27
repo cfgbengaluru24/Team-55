@@ -29,7 +29,7 @@ export default function Homepage() {
     <div>
       <nav className="navbar bg-body-tertiary sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand">Navbar</a>
+          <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
           <form className="d-flex" role="search">
             <i className="fa-solid fa-user fa-3x" onClick={handleLoginToggle}></i>
             {showLogin && (

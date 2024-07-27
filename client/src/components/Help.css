@@ -35,7 +35,7 @@ body {
     flex-direction: column;
   }
   
-  .form-container input[type="email"],
+  .form-container input,
   .form-container select,
   .form-container textarea {
     padding: 12px 15px;
