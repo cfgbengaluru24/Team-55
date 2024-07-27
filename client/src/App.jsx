@@ -1,11 +1,16 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import './App.css'
+
+// import HomePage from './components/Homepage';
+import Help from './components/Help'
+import GetHelp from './components/GetHelp'
+import AdminDashboard from './components/AdminDashboard';
+
 import HomePage from './components/Homepage';
 import Help from './components/Help';
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
-
 
 
 const router = createBrowserRouter(
@@ -35,12 +40,14 @@ const router = createBrowserRouter(
   ]
 )
 
+
 function App() {
 
   return (
     <>
 
     <RouterProvider router={router} />
+
 
     </>
   )
