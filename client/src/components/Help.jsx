@@ -7,7 +7,7 @@ const Help = () => {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
+    
   };
 
   return (
