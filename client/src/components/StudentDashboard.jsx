@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SideNav from './SideNav';
 import Profile from './Profile';
 import './StudentDashboard.css'
+import { Link } from'react-router-dom';
 // import Performance from './Performance';
 // import GetHelp from './GetHelp';
 // import Chatbot from './Chatbot';
@@ -23,6 +24,7 @@ export default function StudentDashboard() {
       <div className="flex-grow-1 p-3 text-center">
         <Profile name={profileData.name} id={profileData.id} email={profileData.email} contact={profileData.contact} college={profileData.college}/>
       </div>
+      <Link to="/"><button className="btn btn-secondary" >Home</button></Link>
     </div>
     // <Router>
     //   <div className="d-flex">

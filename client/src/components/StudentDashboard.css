@@ -1,15 +1,15 @@
 /* Custom styles for the sidebar */
 .sidebar {
-    background-color: #FFBF00 !important; /* Custom yellow background */
+  background-color: #8c6a5d !important; /* Custom yellow background */
     color: #fff; /* Custom text color */
   }
   
   .sidebar .nav-link {
-    color: #000; /* Custom link color */
+    color: #fff; /* Custom link color */
   }
   
   .sidebar .nav-link:hover {
-    background-color: #fff;
+    background-color: #000;
     color: #FFBF00; /* Custom hover effect */
   }
   

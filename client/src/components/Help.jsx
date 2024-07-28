@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { Link } from'react-router-dom';
 // import '../App.css';
 import './Help.css';
 
@@ -16,15 +17,7 @@ const Help = () => {
       <h1>Enter Query for Help</h1>
       <form action='' onSubmit={handleSubmit(onSubmit)}> 
         <div className="container">
-            {/* <input 
-              {...register("email", { required: 'Email is required.' })} 
-              placeholder="email" 
-              type="email" 
-            /> */}
-          {errors.email && <div>{errors.email.message}</div>}
-          <br/>
-          <br/>
-          
+            
           <select {...register("category", { required: true })}>
             <option value="Family Issue">Family Issue</option>
             <option value="Financial Issue">Financial Issue</option>
@@ -37,6 +30,7 @@ const Help = () => {
           <br/>
           <br/>
           <input disabled={isSubmitting} type='submit' value='Submit'/>
+          <Link to="/student-dashboard"><button className="btn btn-primary my-2" disabled={isSubmitting}>Back</button></Link>
         </div>
       </form>
       </div>

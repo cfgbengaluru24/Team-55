@@ -5,24 +5,21 @@ import './App.css'
 // import HomePage from './components/Homepage';
 import Help from './components/Help'
 
-import StudentSignUp from './components/StudentSignUp'
-import AdminSignUp from './components/AdminSignUp';
-
+//import StudentSignUp from './components/StudentSignUp'
+//import AdminSignUp from './components/AdminSignUp';
 import Feedback from './components/Feedback';
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Assessment from './components/Assessment';
 import Rewards from './components/Rewards';
 import AttendanceChecker from './components/AttendanceChecker';
 import GetHelp from './components/GetHelp'
 import AdminDashboard from './components/AdminDashboard';
-
-
 import HomePage from './components/Homepage';
 
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
 import StudentDashboard from './components/StudentDashboard'
+
 
 const router = createBrowserRouter(
   [
@@ -36,10 +33,14 @@ const router = createBrowserRouter(
       element: <Help/>,
     },
     //Need to get hep route 
-    // {
-    //   path:"/get-help",
-    //   element:<HomePage/>,
-    // },
+    {
+      path:"/get-help",
+      element:<GetHelp/>,
+    },
+    {
+      path: "student-dashboard",
+      element:<StudentDashboard/>
+    },
     {
       path: "/student-signup",
       element: <StudentSignUp/>
@@ -52,18 +53,23 @@ const router = createBrowserRouter(
 
       path: "/feedback",
       element: <Feedback/>
-
-path:"/Assessment",
-element:<Assessment/>
+    },{
+      path:"/Assessment",
+      element:<Assessment/>
     },
     {
-path:"/Rewards",
-element:<Rewards/>
+    path:"/Rewards",
+    element:<Rewards/>
     },
     {
       path:"/AttendanceChecker",
       element:<AttendanceChecker/>
-    }
+    },
+    {
+      path:"/admin-dashboard",
+      element:<AdminDashboard/>
+    },
+    
 
   ]
 )
