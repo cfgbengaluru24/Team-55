@@ -1,13 +1,24 @@
 import React from 'react'
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import './App.css'
-import HomePage from './components/Homepage';
+
+// import HomePage from './components/Homepage';
 import Help from './components/Help'
+
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Assessment from './components/Assessment';
 import Rewards from './components/Rewards';
 import AttendanceChecker from './components/AttendanceChecker';
+import GetHelp from './components/GetHelp'
+import AdminDashboard from './components/AdminDashboard';
+
+import HomePage from './components/Homepage';
+
+import StudentSignUp from './components/StudentSignUp'
+import AdminSignUp from './components/AdminSignUp';
+
 const router = createBrowserRouter(
   [
     {
@@ -19,7 +30,7 @@ const router = createBrowserRouter(
       path: "/help",
       element: <Help/>,
     },
-    //Need to get hep rou
+    //Need to get hep route 
     // {
     //   path:"/get-help",
     //   element:<HomePage/>,
@@ -48,9 +59,11 @@ element:<Rewards/>
   ]
 )
 
+
 function App() {
 
   return (
+
     <>
     <RouterProvider router={router} />
     </>

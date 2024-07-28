@@ -19,7 +19,7 @@ const AdminSignUp = () => {
     return (
         <>
             <div className="form-container">
-                <h1>Sign Up</h1>
+                <h1>Admin Sign In</h1>
                 <form onSubmit={handleSubmit(onSubmit)}> 
                     <div className="container">
                         <input 
