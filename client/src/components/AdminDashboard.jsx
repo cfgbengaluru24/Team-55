@@ -9,8 +9,8 @@ const AdminDashboard = () => {
         <div className="sidebar">
           <h4>Admin Dashboard</h4>
           <ul>
-            <li><Link to="/student-performance">Student Performance</Link></li>
-            <li><Link to="/attendance">Attendance</Link></li>
+            <li><Link to="/Assessment">Student Performance</Link></li>
+            <li><Link to="/AttendanceCHecker">Attendance</Link></li>
             <li><Link to="/test-resources">Test Resources</Link></li>
             <li><Link to="/notifications">Notifications</Link></li>
             <li><Link to="/notifications">Logout</Link></li>

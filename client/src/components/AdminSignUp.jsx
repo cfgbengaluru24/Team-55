@@ -12,7 +12,7 @@ const AdminSignUp = () => {
         const pwd = data.password;
         if (emailId === "admin01@gmail.com" && pwd === "1234") {
             // redirect to the admin portal
-            navigate("/");
+            navigate("/admin-dashboard");
         }
     };
 
