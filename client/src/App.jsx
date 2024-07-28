@@ -7,12 +7,16 @@ import Help from './components/Help'
 
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
+
+import Feedback from './components/Feedback';
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Assessment from './components/Assessment';
 import Rewards from './components/Rewards';
 import AttendanceChecker from './components/AttendanceChecker';
 import GetHelp from './components/GetHelp'
 import AdminDashboard from './components/AdminDashboard';
+
 
 import HomePage from './components/Homepage';
 
@@ -44,6 +48,10 @@ const router = createBrowserRouter(
       element: <AdminSignUp/>
     },
     {
+
+      path: "/feedback",
+      element: <Feedback/>
+
 path:"/Assessment",
 element:<Assessment/>
     },
