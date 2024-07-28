@@ -8,7 +8,7 @@ import GetHelp from './components/GetHelp'
 import AdminDashboard from './components/AdminDashboard';
 
 import HomePage from './components/Homepage';
-import Help from './components/Help';
+
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
 
@@ -44,10 +44,12 @@ const router = createBrowserRouter(
 function App() {
 
   return (
+
     <>
+    <Help>
 
-    <RouterProvider router={router} />
-
+    {/* <RouterProvider router={router} /> */}
+    </Help>
 
     </>
   )
