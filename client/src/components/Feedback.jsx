@@ -6,7 +6,7 @@ const Feedback = () => {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
 
   const onSubmit = async (data) => {
-    
+    alert("Feedback submitted successfully!");
   };
 
   return (
@@ -32,6 +32,7 @@ const Feedback = () => {
         <br />
         <br />
         <input disabled={isSubmitting} type='submit' value='Submit' />
+        
       </form>
     </div>
   );

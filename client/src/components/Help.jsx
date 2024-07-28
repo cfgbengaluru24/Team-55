@@ -16,15 +16,7 @@ const Help = () => {
       <h1>Enter Query for Help</h1>
       <form action='' onSubmit={handleSubmit(onSubmit)}> 
         <div className="container">
-            {/* <input 
-              {...register("email", { required: 'Email is required.' })} 
-              placeholder="email" 
-              type="email" 
-            /> */}
-          {errors.email && <div>{errors.email.message}</div>}
-          <br/>
-          <br/>
-          
+            
           <select {...register("category", { required: true })}>
             <option value="Family Issue">Family Issue</option>
             <option value="Financial Issue">Financial Issue</option>

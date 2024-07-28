@@ -5,8 +5,8 @@ import './App.css'
 // import HomePage from './components/Homepage';
 import Help from './components/Help'
 
-import StudentSignUp from './components/StudentSignUp'
-import AdminSignUp from './components/AdminSignUp';
+//import StudentSignUp from './components/StudentSignUp'
+//import AdminSignUp from './components/AdminSignUp';
 import Feedback from './components/Feedback';
 
 import Assessment from './components/Assessment';
@@ -16,6 +16,9 @@ import GetHelp from './components/GetHelp'
 import AdminDashboard from './components/AdminDashboard';
 import HomePage from './components/Homepage';
 
+import StudentSignUp from './components/StudentSignUp'
+import AdminSignUp from './components/AdminSignUp';
+import StudentDashboard from './components/StudentDashboard'
 
 const router = createBrowserRouter(
   [
@@ -30,8 +33,12 @@ const router = createBrowserRouter(
     },
     //Need to get hep route 
     {
-      path:"/dashboard/student-dashboard",
+      path:"/get-help",
       element:<GetHelp/>,
+    },
+    {
+      path: "student-dashboard",
+      element:<StudentDashboard/>
     },
     {
       path: "/student-signup",
@@ -72,6 +79,7 @@ function App() {
 
     <>
     <RouterProvider router={router} />
+
     </>
   )
 }

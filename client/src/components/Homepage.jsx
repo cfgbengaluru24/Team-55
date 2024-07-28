@@ -48,16 +48,17 @@ export default function Homepage() {
           </a>
 
 
-          <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
+          {/* <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
 
           <form className="d-flex" role="search">
             <Link to= '/admin-signup'><button className="btn btn-admin" type="button">Sign in as Admin</button></Link>
             <Link to= '/student-signup'><button className="btn btn-student" type="button">Sign in as Student</button></Link>
-          </form>
+          </form> */}
 
           <div className="d-flex">
-            <button className="btn btn-admin me-2" onClick={() => alert('Admin Login')}>Sign in as Admin</button>
-            <button className="btn btn-student" onClick={() => alert('Student Login')}>Sign in as Student</button>
+          
+            <Link to="/admin-signup"><button className="btn btn-admin me-2">Sign in as Admin</button></Link>
+            <Link to="/student-signup"><button className="btn btn-student" >Sign in as Student</button></Link>
           </div>
 
         </div>

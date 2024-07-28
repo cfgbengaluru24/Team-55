@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const GetHelp = () => {
   const issues = [
@@ -76,6 +77,7 @@ const GetHelp = () => {
           ))}
         </div>
       </div>
+      <Link to="/help"><button className="btn btn-primary" style={{ marginTop: '20px' }}> Get Help from Us</button></Link>
     </div>
   );
 };
