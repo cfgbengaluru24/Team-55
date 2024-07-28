@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { Link } from'react-router-dom';
 import './Help.css';
 
 const Feedback = () => {
@@ -32,7 +33,7 @@ const Feedback = () => {
         <br />
         <br />
         <input disabled={isSubmitting} type='submit' value='Submit' />
-        
+        <Link to="/student-dashboard"><button className="btn btn-primary" disabled={isSubmitting}>Home</button></Link>
       </form>
     </div>
   );
