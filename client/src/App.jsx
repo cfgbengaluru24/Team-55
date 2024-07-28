@@ -5,6 +5,7 @@ import HomePage from './components/Homepage';
 import Help from './components/Help';
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
+import Feedback from './components/Feedback';
 
 
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter(
     {
       path: "/admin-signup",
       element: <AdminSignUp/>
+    },
+    {
+      path: "/feedback",
+      element: <Feedback/>
     }
   ]
 )

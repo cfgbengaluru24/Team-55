@@ -57,6 +57,7 @@ body {
   
   .form-container textarea {
     height: 120px;
+    width: 100%;
     resize: vertical;
   }
   

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './HomePage.css';
 import logo from './logo.jpg'; // Correctly import the logo image
-//import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function Homepage() {
   const [showLogin, setShowLogin] = useState(false);
@@ -63,8 +64,8 @@ export default function Homepage() {
           <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
 
           <form className="d-flex" role="search">
-            <button className="btn btn-admin" type="button">Sign in as Admin</button>
-            <button className="btn btn-student" type="button">Sign in as Student</button>
+            <Link to= '/admin-signup'><button className="btn btn-admin" type="button">Sign in as Admin</button></Link>
+            <Link to= '/student-signup'><button className="btn btn-student" type="button">Sign in as Student</button></Link>
           </form>
         </div>
       </nav>
