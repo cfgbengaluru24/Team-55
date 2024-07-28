@@ -11,7 +11,6 @@ const StudentSignUp = () => {
     const emailId = data.email;
     const pwd = data.password;
     if (emailId === "user01@gmail.com" && pwd === "1234") {
-      // Redirect to the student dashboard
       navigate("/student-dashboard");
     }
   };
