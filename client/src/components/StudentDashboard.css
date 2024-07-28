@@ -1,0 +1,35 @@
+/* Custom styles for the sidebar */
+.sidebar {
+    background-color: #FFBF00 !important; /* Custom yellow background */
+    color: #fff; /* Custom text color */
+  }
+  
+  .sidebar .nav-link {
+    color: #000; /* Custom link color */
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #fff;
+    color: #FFBF00; /* Custom hover effect */
+  }
+  
+  /* Custom styles for the profile card */
+  .profile-card {
+    background-color: #f8f9fa; /* Custom card background */
+    border: 1px solid #ddd; /* Custom border */
+  }
+  
+  .profile-card .card-title {
+    color: #333; /* Custom title color */
+  }
+  
+  /* Custom button styles */
+  .custom-button {
+    background-color: #FFBF00;
+    color: #fff;
+  }
+  
+  .custom-button:hover {
+    background-color: #ffaa00;
+  }
+  

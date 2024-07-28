@@ -10,6 +10,7 @@ import AdminDashboard from './components/AdminDashboard';
 import HomePage from './components/Homepage';
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
+import StudentDashboard from './components/StudentDashboard'
 
 
 const router = createBrowserRouter(
@@ -45,8 +46,8 @@ function App() {
   return (
     <>
 
-    <RouterProvider router={router} />
-
+    {/* <RouterProvider router={router} /> */}
+<StudentDashboard/>
 
     </>
   )
