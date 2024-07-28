@@ -18,9 +18,17 @@
     "react-hook-form": "^7.52.1",
     "react-icon": "^1.0.0",
     "react-icons": "^5.2.1",
+<<<<<<< HEAD
     "react-router-dom": "^6.25.1",
     "react-table": "^7.8.0",
     "xlsx": "^0.18.5"
+=======
+
+    "react-table": "^7.8.0",
+    "xlsx": "^0.18.5",
+    "react-router-dom": "^6.25.1"
+
+>>>>>>> 90143cb82c7bb80e238ba67ab384a3ab3bd0295b
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
