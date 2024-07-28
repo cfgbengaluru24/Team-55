@@ -1,0 +1,90 @@
+/* Help.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .form-container .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container input,
+  .form-container select,
+  .form-container textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-container input[type="email"]:focus,
+  .form-container select:focus,
+  .form-container textarea:focus {
+    border-color: #ffbf00;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  .form-container textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .form-container input[type="submit"] {
+    padding: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ffbf00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #ffbf00;
+    transform: translateY(-2px);
+  }
+  
+  .form-container input[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .form-container div {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
