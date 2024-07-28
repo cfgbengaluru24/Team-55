@@ -22,6 +22,7 @@ import HomePage from './components/Homepage';
 
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
+import StudentDashboard from './components/StudentDashboard'
 
 const router = createBrowserRouter(
   [
@@ -74,6 +75,7 @@ function App() {
 
     <>
     <RouterProvider router={router} />
+
     </>
   )
 }
