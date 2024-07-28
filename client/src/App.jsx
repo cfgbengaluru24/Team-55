@@ -20,6 +20,7 @@ import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
 import StudentDashboard from './components/StudentDashboard'
 
+
 const router = createBrowserRouter(
   [
     {
@@ -67,7 +68,8 @@ const router = createBrowserRouter(
     {
       path:"/admin-dashboard",
       element:<AdminDashboard/>
-    }
+    },
+    
 
   ]
 )

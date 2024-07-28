@@ -115,8 +115,8 @@ export default function Homepage() {
         </div>
       </main>
 
-      <footer className="text-center text-lg-start mt-auto">
-        <div className="container p-4">
+      <footer className="text-center text-lg-start mt-auto ">
+        <div className="container">
           <p>&copy; 2024 Your NGO. All rights reserved.</p>
         </div>
       </footer>

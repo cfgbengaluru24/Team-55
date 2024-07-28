@@ -24,7 +24,7 @@ export default function StudentDashboard() {
       <div className="flex-grow-1 p-3 text-center">
         <Profile name={profileData.name} id={profileData.id} email={profileData.email} contact={profileData.contact} college={profileData.college}/>
       </div>
-      <Link to="/"><button className="btn btn-primary" >Home</button></Link>
+      <Link to="/"><button className="btn btn-secondary" >Home</button></Link>
     </div>
     // <Router>
     //   <div className="d-flex">

@@ -30,7 +30,7 @@ const Help = () => {
           <br/>
           <br/>
           <input disabled={isSubmitting} type='submit' value='Submit'/>
-          <Link to="/student-dashboard"><button className="btn btn-primary" disabled={isSubmitting}>Back</button></Link>
+          <Link to="/student-dashboard"><button className="btn btn-primary my-2" disabled={isSubmitting}>Back</button></Link>
         </div>
       </form>
       </div>
