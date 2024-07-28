@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const GetHelp = () => {
-  const [activeKey, setActiveKey] = useState(null);
-
   const issues = [
     {
       category: 'Finance Issues',
@@ -38,69 +36,44 @@ const GetHelp = () => {
     },
   ];
 
-  const toggleActiveKey = (key) => {
-    setActiveKey(activeKey === key ? null : key);
-  };
-
   return (
     <div className="container mt-5" style={{ backgroundColor: 'white' }}>
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <div className="accordion" id="accordionExample">
-            {issues.map((issue, index) => (
-              <div className="card mb-3" key={index} style={{ border: '1px solid #ddd' }}>
-                <div className="card-header" id={`heading${index}`} style={{ backgroundColor: '#e3f2fd' }}>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target={`#collapse${index}`}
-                      aria-expanded={activeKey === index.toString()}
-                      aria-controls={`collapse${index}`}
-                      onClick={() => toggleActiveKey(index.toString())}
-                      style={{ fontWeight: 'bold', color: 'black', textDecoration: 'none' }}
-                    >
-                      {issue.category}
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id={`collapse${index}`}
-                  className={`collapse ${activeKey === index.toString() ? 'show' : ''}`}
-                  aria-labelledby={`heading${index}`}
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body" style={{ backgroundColor: '#f1f8e9' }}>
-                    <ul className="list-unstyled">
-                      {issue.relatedIssues.map((relatedIssue, idx) => (
-                        <li
-                          key={idx}
-                          style={{
-                            border: '1px solid #ddd',
-                            padding: '10px',
-                            marginBottom: '5px',
-                            borderRadius: '5px',
-                            backgroundColor: 'white',
-                          }}
-                        >
-                          <a
-                            href={relatedIssue.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: 'black', textDecoration: 'none' }}
-                          >
-                            {relatedIssue.title}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+      <div className="row justify-content-center" style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ width: '100%' }}>
+          {issues.map((issue, index) => (
+            <div className="card mb-3 mx-4" key={index} style={{ border: '1px solid #ddd' }}>
+              <div className="card-header" style={{ backgroundColor: '#8c6a5d', color: '#fff' }}>
+                <h2 className="mb-0">
+                  {issue.category}
+                </h2>
               </div>
-            ))}
-          </div>
+              <div className="card-body" style={{ backgroundColor: '#f1f8e9' }}>
+                <ul className="list-unstyled">
+                  {issue.relatedIssues.map((relatedIssue, idx) => (
+                    <li
+                      key={idx}
+                      style={{
+                        border: '1px solid #ddd',
+                        padding: '10px',
+                        marginBottom: '5px',
+                        borderRadius: '5px',
+                        backgroundColor: 'white',
+                      }}
+                    >
+                      <a
+                        href={relatedIssue.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'black', textDecoration: 'none' }}
+                      >
+                        {relatedIssue.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -108,5 +81,3 @@ const GetHelp = () => {
 };
 
 export default GetHelp;
-
-
