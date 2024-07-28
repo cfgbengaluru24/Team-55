@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import './HomePage.css';
 import logo from './logo.jpg'; // Correctly import the logo image
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+
+
 export default function Homepage() {
   const [showLogin, setShowLogin] = useState(false);
 
@@ -41,10 +46,20 @@ export default function Homepage() {
               <span className="tagline">Every child must become the best version of themselves</span>
             </div>
           </a>
+
+
+          <a className="navbar-brand" color="#FFBF00">Joining The Dots Foundation</a>
+
+          <form className="d-flex" role="search">
+            <Link to= '/admin-signup'><button className="btn btn-admin" type="button">Sign in as Admin</button></Link>
+            <Link to= '/student-signup'><button className="btn btn-student" type="button">Sign in as Student</button></Link>
+          </form>
+
           <div className="d-flex">
             <button className="btn btn-admin me-2" onClick={() => alert('Admin Login')}>Sign in as Admin</button>
             <button className="btn btn-student" onClick={() => alert('Student Login')}>Sign in as Student</button>
           </div>
+
         </div>
       </nav>
 
