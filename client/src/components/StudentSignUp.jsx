@@ -5,13 +5,15 @@ import './Help.css';
 
 const StudentSignUp = () => {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
-  const navigate = useNavigate(); // Use the useNavigate hook
+  const navigate = useNavigate(); 
 
   const onSubmit = async (data) => {
     const emailId = data.email;
     const pwd = data.password;
     if (emailId === "user01@gmail.com" && pwd === "1234") {
       navigate("/student-dashboard");
+      //input
+      
     }
   };
 
