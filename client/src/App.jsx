@@ -46,8 +46,8 @@ function App() {
   return (
     <>
 
-    {/* <RouterProvider router={router} /> */}
-<StudentDashboard/>
+    <RouterProvider router={router} />
+{/* <StudentDashboard/> */}
 
     </>
   )
