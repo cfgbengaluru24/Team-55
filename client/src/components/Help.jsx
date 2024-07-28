@@ -8,7 +8,6 @@ const Help = () => {
 
   const onSubmit = async (data) => {
 
-
   };
 
   return (

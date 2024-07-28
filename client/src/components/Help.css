@@ -50,7 +50,7 @@ body {
   .form-container input[type="email"]:focus,
   .form-container select:focus,
   .form-container textarea:focus {
-    border-color: #ffbf00;
+    border-color: #8c6a5d;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
     outline: none;
   }
@@ -65,7 +65,7 @@ body {
     padding: 12px;
     font-size: 18px;
     color: #ffffff;
-    background-color: #ffbf00;
+    background-color: #8c6a5d;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -73,7 +73,7 @@ body {
   }
   
   .form-container input[type="submit"]:hover {
-    background-color: #ffbf00;
+    background-color: #8c6a5d;
     transform: translateY(-2px);
   }
   
