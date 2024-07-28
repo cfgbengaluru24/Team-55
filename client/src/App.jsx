@@ -4,6 +4,13 @@ import './App.css'
 
 // import HomePage from './components/Homepage';
 import Help from './components/Help'
+
+import StudentSignUp from './components/StudentSignUp'
+import AdminSignUp from './components/AdminSignUp';
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Assessment from './components/Assessment';
+import Rewards from './components/Rewards';
+import AttendanceChecker from './components/AttendanceChecker';
 import GetHelp from './components/GetHelp'
 import AdminDashboard from './components/AdminDashboard';
 
@@ -11,7 +18,6 @@ import HomePage from './components/Homepage';
 
 import StudentSignUp from './components/StudentSignUp'
 import AdminSignUp from './components/AdminSignUp';
-
 
 const router = createBrowserRouter(
   [
@@ -36,7 +42,20 @@ const router = createBrowserRouter(
     {
       path: "/admin-signup",
       element: <AdminSignUp/>
+    },
+    {
+path:"/Assessment",
+element:<Assessment/>
+    },
+    {
+path:"/Rewards",
+element:<Rewards/>
+    },
+    {
+      path:"/AttendanceChecker",
+      element:<AttendanceChecker/>
     }
+
   ]
 )
 
@@ -46,11 +65,7 @@ function App() {
   return (
 
     <>
-    <Help>
-
-    {/* <RouterProvider router={router} /> */}
-    </Help>
-
+    <RouterProvider router={router} />
     </>
   )
 }

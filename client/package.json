@@ -14,16 +14,23 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "file-saver": "^2.0.5",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.1",
     "react-icon": "^1.0.0",
     "react-icons": "^5.2.1",
+<<<<<<< HEAD
+    "react-router-dom": "^6.25.1",
+    "react-table": "^7.8.0",
+    "xlsx": "^0.18.5"
+=======
 
     "react-router-dom": "^6.25.1",
     "react-table": "^7.8.0",
     "xlsx": "^0.18.5"
 
+>>>>>>> 90143cb82c7bb80e238ba67ab384a3ab3bd0295b
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -1,14 +1,46 @@
-.table {
+/* AttendanceChecker.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   
-  .th, .td {
-    border: 1px solid black;
+  th, td {
+    border: 1px solid #ddd;
     padding: 8px;
+    text-align: center;
   }
   
-  .th {
+  th {
     background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
   }
   
