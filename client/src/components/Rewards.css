@@ -1,0 +1,41 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+  }
+  
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .student-table th,
+  .student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .student-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .student-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .student-table td {
+    text-align: center;
+  }
+  

@@ -1,3 +1,4 @@
+// AttendanceTable.jsx
 import React, { useEffect, useState } from 'react';
 import * as XLSX from 'xlsx';
 import './AttendanceChecker.css';
@@ -46,7 +47,7 @@ const AttendanceTable = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>Students with Consecutive Absences</h1>
       <table border="1">
         <thead>
